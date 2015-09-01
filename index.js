@@ -54,10 +54,9 @@ function setupRoute(job) {
       req.body[k] = req.params[k];
     }
 
-    lambdaJob.Payload = JSON.stringify(req.body);
-    lambdaJob.ClientContext = JSON.stringify(urlparams);
+    job.lambda.Payload = JSON.stringify(req.body);
 
-    lambda.invoke(lambdaJob, function(err, data) {
+    lambda.invoke(job.lambda, function(err, data) {
       if (err) console.log(err, err.stack); // an error occurred
       else     console.log(data);           // successful response
       res.json(data);
