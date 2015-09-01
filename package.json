@@ -1,0 +1,30 @@
+{
+  "name": "lambda-api-gateway",
+  "version": "0.0.1",
+  "description": "Simple HTTP Gateway to call AWS lambda functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Eric Abouaf",
+    "email": "eric.abouaf@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neyric/lambda-api-gateway.git"
+  },
+  "keywords": [
+    "aws",
+    "lambda"
+  ],
+  "bugs": {
+    "url": "https://github.com/neyric/lambda-api-gateway/issues"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1.45",
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3"
+  }
+}
